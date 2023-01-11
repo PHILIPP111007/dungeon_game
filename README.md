@@ -1,7 +1,7 @@
 # dungeon_game
 
 Welcome to Dungeon v2.2!
-To play the game, run the game file in the terminal.
+To play the game, run game.py in the terminal.
 
 Rules of the game:
 
