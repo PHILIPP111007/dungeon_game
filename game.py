@@ -95,13 +95,13 @@ def hero_movement_wasd():
 		change_H_into_none()
 		if game_map[x][y] == portal_picture_forward:
 			if not tavern_flag:
-				map_id = str(int(map_id) + 1)
+				map_id += 1
 			else:
 				tavern_flag = False
 			load_map_plus_or_minus()
 		elif game_map[x][y] == portal_picture_backward:
 			if not tavern_flag:
-				map_id = str(int(map_id) - 1)
+				map_id -= 1
 			else:
 				tavern_flag = False
 			load_map_plus_or_minus(movement='-')
@@ -141,13 +141,13 @@ def hero_movement_chess():
 			change_H_into_none()
 			if game_map[x][y] == portal_picture_forward:
 				if not tavern_flag:
-					map_id = str(int(map_id) + 1)
+					map_id += 1
 				else:
 					tavern_flag = False
 				load_map_plus_or_minus()
 			elif game_map[x][y] == portal_picture_backward:
 				if not tavern_flag:
-					map_id = str(int(map_id) - 1)
+					map_id -= 1
 				else:
 					tavern_flag = False
 				load_map_plus_or_minus(movement='-')
@@ -410,7 +410,7 @@ def sell_weapon():
 # global variables
 word = input('Start the game "Dungeon_v2.2"? (1 / 0):\n')
 files_path = change_pathname.path
-map_id = '1'
+map_id = 1
 max_hp = 30
 inventory_reset = {"HP": max_hp, "$": 0, "hand": [0, 1, 1]}
 
