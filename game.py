@@ -129,7 +129,6 @@ def hero_movement_chess():
 	x = ord(word.split()[0]) - 65
 	y = ord(word.split()[1]) - 65
 
-
 	if 0 <= x < len(game_map) and 0 <= y < len(game_map[0]):
 		if game_map[x][y] == stone_picture:
 			return its_a_stone_print()
@@ -243,7 +242,6 @@ def monster(monster_coordinates):
 
 def fight(monster_data, monster_coordinates):
 	global lose_flag
-	global inventory
 
 
 	while True:
@@ -278,7 +276,6 @@ def fight(monster_data, monster_coordinates):
 
 
 def menu():
-
 	choice = input('\nMENU:\n"enter" - exit the menu\n2 - backpack\n3 - tavern\nq - save and quit the game\n9 - quit the game and reset progress\n')
 	if choice == '2':
 		inventory_print()
@@ -355,9 +352,7 @@ def tavern_load_map():
 def shop_print():
 	print('\nSHOP:\n')
 	print(f'Total coins: ${inventory["$"]}')
-
 	choice = input('Do you want to buy or sell a weapon? (1 - buy, 2 - sell, "enter" - exit)\n')
-
 	if choice == '1':
 		print()
 		buy_weapon()
