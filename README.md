@@ -20,3 +20,5 @@ Rules of the game:
 	* "S" - shop
 
 Have fun playing!
+
+<img src="./images_for_README/img_1.png" alt="Alt text" title="Optional title" height='600'>
